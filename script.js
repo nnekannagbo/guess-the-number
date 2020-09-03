@@ -27,13 +27,13 @@ function compareGuess() {
     document.getElementById("guesses").innerHTML = userGuesses;
 
     if(userGuess > computerGuess) {
-        document.getElementById("textOuput").innerHTML = "Your guess is too high";
+        document.getElementById("textOutput").innerHTML = "Your guess is too high";
         document.getElementById("inputBox").value = "";
     } else if(userGuess < computerGuess) {
-        document.getElementById("textOuput").innerHTML = "Your guess is too low";
-        document.getElementById("inputBox").value = "";
+        document.getElementById("textOutput").innerHTML = "Your guess is too low";
+        document.getElementById("inputBox").value = " ";
     } else {
-        document.getElementById("textOuput").innerHTML = "Correct!";
+        document.getElementById("textOutput").innerHTML = "Correct!";
     }
 
 }
