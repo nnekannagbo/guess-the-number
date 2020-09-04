@@ -3,6 +3,15 @@ let userGuesses = [];
 let attempts = 0;
 let maxGuesses;
 
+function gameEnded() {
+    document.getElementById("newGameButton").style.display = "inline";
+    document.getElementById("inputBox").setAttribute("readOnly", "readOnly");
+}
+
+function newGame() {
+    window.location.reload();
+}
+
 function init() {
     computerGuess = Math.floor(Math.random() * 100 + 1);
     document.getElementById("newGameButton").style.display = "none";
@@ -40,17 +49,21 @@ function compareGuess() {
         } else {
             document.getElementById("textOutput").innerHTML = 
             "Correct! You got it in " + attempts + " attempts";
+            gameEnded()
         }
     } else {
         if(userGuess > computerGuess) {
             document.getElementById("textOutput").innerHTML = 
             "YOU LOSE! <br> The number was " + computerGuess;
+            gameEnded();
         } else if(userGuess < computerGuess) {
             document.getElementById("textOutput").innerHTML = 
             "YOU LOSE! <br> The number was " + computerGuess;
+            gameEnded();
         } else {
             document.getElementById("textOutput").innerHTML = 
             "Correct! You got it in " + attempts + " attempts";
+            gameEnded();
         }
     }
 

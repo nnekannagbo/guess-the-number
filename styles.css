@@ -64,6 +64,10 @@ button:last-child:hover {
     background: yellow;
 }
 
+#newGameButton {
+    font-family: "Press Start 2P", sans-serif;
+}
+
 button:last-child {
     background: var(--red);
     border-radius: 0 0 1rem 1rem;
