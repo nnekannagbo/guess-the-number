@@ -75,6 +75,7 @@ button:last-child {
 
 h3 {
     font-size: 2rem;
+    font-family: "Press Start 2P", sans-serif;
 }
 
 input {
@@ -96,6 +97,13 @@ input {
 
 #rangeOutput {
     font-size: 1.6rem;
+    font-family: "Press Start 2P", sans-serif;
+    color: var(--gradient-1);
+}
+
+#currentRange {
+    font-family: "Press Start 2P", sans-serif;
+    color: var(--gradient-1);
 }
 
 .stats {
@@ -106,6 +114,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Press Start 2P", sans-serif;
 }
 
 .info span {
@@ -114,6 +123,22 @@ input {
 
 #newGameButton {
     border-radius: 0;
+}
+
+.flash {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 800px) {
