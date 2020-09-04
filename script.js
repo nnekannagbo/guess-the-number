@@ -9,8 +9,7 @@ let high = 100;
 function updateRange() {
     const rangeOutput = document.getElementById("rangeOutput");
     rangeOutput.innerText = `${low} - ${high}`
-    rangeOutput.style.marginLeft = low + "%";
-    rangeOutput.style.marginRight = 100 - "high" + "%";
+  
     rangeOutput.classList.add("flash");
 
     const lowValue = document.getElementById("low");
