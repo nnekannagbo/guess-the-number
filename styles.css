@@ -31,6 +31,7 @@ main {
 h2 {
     font-size: 2.2rem;
     margin: 8rem 0;
+    font-family: "Press Start 2P", sans-serif;
 }
 
 p {
@@ -42,12 +43,25 @@ p {
     flex-direction: column;
 }
 
+#welcomeScreen p {
+    font-family: "Press Start 2P", sans-serif;
+    color: var(--gradient-1);
+}
+
 button {
     border: none;
     cursor: pointer;
     background: var(--green);
     padding: 2rem;
     border-radius: 1rem 1rem 0 0;
+}
+
+button:hover {
+    background: yellow;
+}
+
+button:last-child:hover {
+    background: yellow;
 }
 
 button:last-child {
